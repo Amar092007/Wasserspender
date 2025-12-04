@@ -12,7 +12,7 @@
 Bounce2 :: Button btnYellow = Bounce2::Button();
 Bounce2 :: Button btnBlue = Bounce2::Button();;
 
-int counter = 0;
+int counter = 2;
 
 
 void setup () {
