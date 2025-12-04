@@ -33,9 +33,29 @@ void loop () {
 
   if(btnYellow.pressed()){
     Serial.println("Yellow pressed");
-    digitalWrite(LED_GRN,HIGH);
-    delay(2000);
-    digitalWrite(LED_GRN,LOW);
+    for(int i = 1; i <= 3;i++){
+      digitalWrite(LED_PKN,HIGH);
+      delay(200);
+      digitalWrite(LED_PKN,LOW);
+      delay(200);
+
+    }
+
+    for(int i = 1; i <= 3;i++){
+      digitalWrite(LED_PKN,HIGH);
+      delay(1000);
+      digitalWrite(LED_PKN,LOW);
+      delay(1000);
+
+    }
+
+    for(int i = 1; i <= 3;i++){
+      digitalWrite(LED_PKN,HIGH);
+      delay(200);
+      digitalWrite(LED_PKN,LOW);
+      delay(200);
+
+    }
   }
 
   if(btnBlue.pressed()){
