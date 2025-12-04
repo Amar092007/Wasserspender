@@ -38,7 +38,24 @@ void loop () {
     digitalWrite(LED_GRN,LOW);
   }
 
-  if(btnBlue.pressed()){
+   if(btnBlue.pressed()){
     Serial.println("Blue pressed");
+
+    for(int i = 0; i < 10; i++){   // 10x wechseln
+      // ROSA / ROT
+      digitalWrite(LED_PKN, HIGH);
+      digitalWrite(LED_GRN, LOW);
+      delay(500);
+
+      // GRÜN
+      digitalWrite(LED_PKN, LOW);
+      digitalWrite(LED_GRN, HIGH);
+      delay(500);
+    }
+
+    // Am Ende alles ausschalten
+    digitalWrite(LED_PKN, LOW);
+    digitalWrite(LED_GRN, LOW);
   }
+
 }
